@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #323238;
+    display: grid;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+header {
+    justify-self: right;
+    padding-top: 6.4rem;
+    padding-right: 6.4rem;    
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    align-self: start;
+    gap: 19.2rem;
+}
+
+#timer {    
+    font-weight: 500;
+    font-size: 12.6rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    gap: 4rem;
+}
+
+
+.sound {
+    display: grid;
+    grid-template-areas: "a b" "c d";
+    gap: 3.2rem;
+}
+
+.sound button {
+    width: 13.8rem;
+    height: 15rem;
+    background-color: #E1E1E6;
+    border-radius: 2.4rem;
+}
+
+
+.sound button:nth-child(1) {
+    grid-area: a;
+}
+.sound button:nth-child(2) {
+    grid-area: b;
+}
+.sound button:nth-child(3) {
+    grid-area: c;
+}
+.sound button:nth-child(4) {
+    grid-area: d;
+}
+
+.sound .hide {
+    background-color: #02799D;
+}
+
+.hide svg path{
+    fill: #ffffff;
+}
+
+.darkmode {
+    background-color: #121214;
+    color: #ffffff;
+}
+
+.darkmode main .left .controls button svg path {
+    fill: #C4C4CC;
+}
+
+.darkmode .sound svg path {
+    fill: #C4C4CC;
+}
+
+.darkmode .sound .hide svg path {
+    fill: #ffffff;
+}
+
+.darkmode .sound button {
+    background-color: #29292E;
+}
+
+.darkmode .sound .hide {
+    background-color: #0A3442;
+}
+
+.hide2 {
+    display: none;
+}
+
+input {
+    margin-top: 3.2rem;
+    -webkit-appearance: none;
+    background: #404047;
+    width: 9rem;
+    height: .4rem;
+    outline: none;
+    border-radius: 9px;  
+}
+
+input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%; 
+
+    background: #323238;
+    cursor: pointer;
+}
+
+.sound .hide input {
+    background: #ffffff;
+}
+
+.sound .hide input::-webkit-slider-thumb {
+    background: #ffffff;
+}
+
+.darkmode .sound input {
+    background: #ffffff;
+}
+
+.darkmode .sound input::-webkit-slider-thumb {
+    background: #ffffff;
+}
